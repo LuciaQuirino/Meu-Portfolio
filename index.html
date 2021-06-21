@@ -10,39 +10,137 @@
     <title>Portfolio</title>
 </head>
 <body>
+
+    <!-- Menu -->
     <div class="pos-f-t">
-    <div class="collapse text-right" id="navbarToggleExternalContent">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bg-dark d-flex flex-row-reverse">
-      <li class="nav-item active p-3">
-        <a class="nav-link text-warning" href="#">
-        <i class="fas fa-phone"></i>
-        Contato
-        </a>
-      </li>
-      <li class="nav-item p-3">
-        <a class="nav-link text-warning" href="#">
-       <i class="fas fa-code"></i>
-        Skills
-        </a>
-      </li>
-      <li class="nav-item p-3">
-        <a class="nav-link text-warning" href="#">
-        <i class="fas fa-user"></i>
-        Sobre Mim
-        </a>
-      </li>
-    </ul>
+      <div class="collapse text-right" id="navbarToggleExternalContent">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 bg-dark d-flex flex-row-reverse">
+        <li class="nav-item active p-3">
+          <a class="nav-link text-warning" href="#">
+          <i class="fas fa-phone"></i>
+          Contato
+          </a> 
+        </li>
+        <li class="nav-item p-3">
+          <a class="nav-link text-warning" href="#">
+        <i class="fas fa-code"></i>
+          Experiências 
+          </a>
+        </li>
+        <li class="nav-item p-3">
+          <a class="nav-link text-warning" href="#about">
+          <i class="fas fa-user"></i>
+          Sobre Mim
+          </a>
+        </li>
+      </ul>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-toggler"></span>
+          </button>
+      </nav>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon custom-toggler"></span>
-        </button>
-    </nav>
+
+    <!-- Galeria -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="files/slide1.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="files/slide2.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="files/slide3.png" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+
     <div class="container">
-    <h1 class="d-flex justify-content-center">Portfolio Lucia Quirino</h1> 
-    </div>
-   
+
+      <!-- Sobre mim -->
+      <div class="row my-3" id="about">
+          <div class="col-md-12">
+
+            <!-- Title -->
+            <div class="title">
+              <h1>Lucia de Fatima</h1>
+              <span class="h4 element">Estudante de análise de sistemas de TI</span>
+            </div>
+            <!-- End of title -->
+
+            <!-- About me -->
+            <div class="space">
+            <hr>
+              <h5>SOBRE MIM</h5>
+              <p class="text-justify">
+              Formada em pedagogia, descobri o gosto pela área de TI por ser casada
+              com um desenvolvedor, área que antes por mim era desconhecida.
+              Estou cursando <b>Análise de sistemas de TI e projetos</b> na faculdade
+              FAEL de ensino, e pretendo atuar como analista de requisitos.
+              </p>
+              <p class="text-justify">
+              Conheço bastante de Photoshop e por este motivo tenho facilidade com UML e
+              a maioria das tecnologias de prototipação de interface de usuário. 
+              Conheço também o básico de Javascript, CSS3, HTML5 e Bootstrap4.
+              </p>
+            </div>
+            <!-- End of about me -->
+          </div>
+
+          <!-- Avatar image -->
+          <div class="col-md-6 col-sm-12  animated" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier( 0.6, 0.2, 0.1, 1 ) 0s, opacity 0.5s cubic-bezier( 0.6, 0.2, 0.1, 1 ) 0s; transition: transform 0.5s cubic-bezier( 0.6, 0.2, 0.1, 1 ) 0s, opacity 0.5s cubic-bezier( 0.6, 0.2, 0.1, 1 ) 0s; ">
+            <img src="files/perfil.jpg" class="avatar rounded-circle" alt="Avatar">
+          </div>
+          <!-- End avatar image -->
+
+          <!-- Start skills / expertise -->
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="space">
+              <h3>SKILLS</h3>
+
+              <h5>Photoshop</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 90%"></div>
+              </div>
+
+              <h5>HTML / CSS3</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-striped" style="width: 60%"></div>
+              </div>
+
+              <h5>UML</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-striped bg-warning" style="width: 55%"></div>
+              </div>
+
+              <h5>Scrum</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%"></div>
+              </div>
+
+              <h5>Javascript</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 10%"></div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <!-- End of skills / expertise -->
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

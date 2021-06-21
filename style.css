@@ -7,3 +7,14 @@
 .custom-toggler.navbar-toggler {
     border-color: rgb(255, 193, 7);
 }
+
+.avatar {
+    text-align: center;
+    width: 60%;
+    height: auto;
+}
+
+body {
+    background: rgb(125, 168, 193);
+    background: linear-gradient(180deg, rgba(125, 168, 193, 1) 6%, rgba(254, 254, 254, 1) 81%);
+}
